@@ -344,9 +344,6 @@ def calc_renal(d, pred_dt):
         else:
             scores.add(0)
 
-    if not (urine and creatinine):
-        scores.add(4)
-
     return max(list(scores))
 
 # calculate total sofa score
